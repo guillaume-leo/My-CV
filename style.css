@@ -1,0 +1,155 @@
+body{	
+	font-family: 'Montserrat', sans-serif;
+	background-color:black;
+}
+
+.title{
+	background-color:rgba(255,255,255,0.8);
+	width:100vh;
+	height:350px;
+	margin:auto;
+	display:grid;
+	grid-template-columns:1fr 1.5fr 0.5fr;
+	grid-template-rows:1.5fr 0.25fr;
+	color:#111827;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	grid-template-areas:
+	"name	.	pic"
+	".	.	info"
+
+}
+
+.title .name{
+	padding:0px;
+	margin:5px;
+}
+
+.title .pic{
+	border-top-right-radius:15px;	
+	width:100%;
+	height:100%;
+	grid-area:pic
+}
+
+.title .info{
+	grid-area:info;
+}
+
+.hLine{
+	background-color:rgba(255,255,255,0.8);
+	height:1px;
+	width:90vh;
+	margin: auto;
+}
+
+.experiences{
+	background-color:rgba(255,255,255,0.8);
+	width:100vh;
+	height:350px;
+	margin:auto;
+	display:grid;
+	grid-template-columns:1.5fr 1.75fr;
+	grid-template-rows:0.125fr 1fr;
+	color:#111827;
+	grid-template-areas:
+	"title title"
+	"date job"
+}
+
+.experiences .titre{
+	padding-left:50px;
+	letter-spacing:2px;
+	grid-area:title;
+}
+
+.experiences .date{
+	border-spacing:20px;
+	width:75%;
+	list-style-type: none;
+	margin:auto;
+	grid-area:date;
+}
+
+li{
+	margin: 0 0 15px 0;
+}
+
+.experiences .job {
+	border-spacing:20px;
+	width:75%;
+	list-style-type: none;
+	margin:auto;
+	grid-area:job;
+
+}
+
+.formations{
+	background-color:rgba(255,255,255,0.8);
+	width:100vh;
+	height:350px;
+	margin:auto;
+	display:grid;
+	grid-template-columns:1.5fr 1.75fr;
+	grid-template-rows:0.125fr 1fr;
+	color:#111827;
+	grid-template-areas:
+	"title title"
+	"date job"
+}
+
+.formations .date{
+	border-spacing:20px;
+	width:75%;
+	list-style-type: none;
+	margin:auto;
+	grid-area:date;
+}
+
+.formations .job {
+	border-spacing:20px;
+	width:75%;
+	list-style-type: none;
+	margin:auto;
+	grid-area:job;
+
+}
+
+.formations .titre{
+	padding-left:50px;
+	letter-spacing:2px;
+	grid-area:title;
+}
+
+.hobbies{
+	background-color:rgba(255,255,255,0.8);
+	width:100vh;
+	height:150px;
+	margin:auto;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows:0.125fr 1fr;
+	color:#111827;
+	grid-template-areas:
+	"title"
+	"content";
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+	
+}
+
+.hobbies .titre{
+	padding-left:50px;
+	letter-spacing:2px;
+	grid-area:title;
+}
+
+.hobbies .content{
+	border-spacing:20px;
+	width:50%;
+	text-align:center;
+	list-style-type: none;
+	margin:auto;
+	grid-area:content;
+
+}
